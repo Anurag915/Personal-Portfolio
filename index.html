@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Rishabh Mishra Portfolio</title>
+    <title>Anurag Prjapati</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -29,7 +29,10 @@
 /*======================================
 //--//-->   ABOUT
 ======================================*/
-
+a.btn {
+    pointer-events: auto; /* Should not be set to none */
+    cursor: pointer;      /* Ensure it's not disabled */
+}
 .about-mf .box-shadow-full {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -42,7 +45,25 @@
 .about-mf .about-img img {
   margin-left: 10px;
 }
+.github-button {
+  pointer-events: auto; /* Ensure clicks are enabled */
+}
+.github-button {
+  z-index: 10; /* Ensure it's above other elements */
+  position: relative;
+}
 
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10; /* Ensure the navbar stays on top */
+  background-color: black; /* Optional for visibility */
+}
+body {
+  padding-top: 60px; /* Adjust based on the height of your navbar */
+}
 
 .skill-mf .progress {
   /* background-color: #cde1f8; */
@@ -119,7 +140,7 @@
 	  
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Rishabh Mishra</a>
+	      <a class="navbar-brand" href="index.html">Anurag Prajapati</a>
 	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
@@ -141,13 +162,13 @@
 	      	<div class="overlay"></div>
 	         <div class="container">
 	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.png);">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_11.png); border-radius: 50%;  width: 700px; height: 700px; ">
 	          	 <div class="overlay"></div>
 	          	</div>
 		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
 		          	<div class="text">
 		          		<span class="subheading">Hello!</span>
-			            <h1 class="mb-4 mt-3">I'm <span>Rishabh Mishra</span></h1>
+			            <h1 class="mb-4 mt-3">I'm <span>Anurag Prajapati</span></h1>
 
 						<!-- Element to contain animated typing -->
 						<span id="typing-animation"></span>
@@ -160,8 +181,8 @@
 						// Create an array of typing text
 						const typingTexts = [
 						'Engineer  ',
-						'YouTuber  ',
-						'Teacher   ',
+						'Web Developer  ',
+						'Java Developer   ',
 						];
 
 						// Create a function to display the typing animation for a given text
@@ -187,11 +208,11 @@
 
 						<br>
 						<br>
-			            <h2>A Senior Data Analyst</h2>
+			            <!-- <h2>A Senior Data Analyst</h2> -->
 						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
 						<!-- <br> -->
-			            <p><a href="https://www.youtube.com/@RishabhMishraOfficial" class="btn btn-primary py-3 px-4">YouTube</a> 
-							<a href="https://github.com/rishabhnmishra" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+			            <!-- <p><a href="https://www.youtube.com/@RishabhMishraOfficial" class="btn btn-primary py-3 px-4">YouTube</a>  -->
+							<a href="https://github.com/Anurag915" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
 		            </div>
 		          </div>
 	        	</div>
@@ -213,51 +234,59 @@
 								<div class="row">
 									<div class="col-sm-6 col-md-5">
 									  <div class="about-img">
-										<img src="images/about-me.png" class="img-fluid rounded b-shadow-a" alt="">
+										<img src="images/about-me.jpg" class="img-fluid rounded b-shadow-a" alt="" style="border-radius: 50%;">
 									  </div>
 									</div>
 									<!-- Details next to profile image -->
 									<div class="col-sm-6 col-md-7">
 									  <div class="about-info">
-										<p><span class="title-s">Name: </span> <span>Rishabh Mishra</span></p>
-										<p><span class="title-s">Job Role: </span> <span>Senior Data Analyst</span></p>
-										<p><span class="title-s">Experience: </span> <span>5 Years 3 Months</span></p>
-										<p><span class="title-s">Address: </span> <span>Bengaluru, India</span></p>
+										<p><span class="title-s">Name: </span> <span>Anurag Prajapati</span></p>
+										<p><span class="title-s">Job Role: </span> <span>Web Developer</span></p>
+										<!-- <p><span class="title-s">Experience: </span> <span>5 Years 3 Months</span></p> -->
+										<p><span class="title-s">Address: </span> <span>Kurnool, Andhra Pradesh</span></p>
 									  </div>
 									</div>
 								  </div>
 
 								<div class="skill-mf">
 									<p class="title-s">Skills</p>
-									<span>SQL</span> <span class="pull-right">95%</span>
+									<span>HTML CSS</span> <span class="pull-right">95%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+
+									<span>jAVASCRIPT</span> <span class="pull-right">85%</span>
 									<div class="progress">
 										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
 											aria-valuemax="100"></div>
 									</div>
 									
-									<span>PYTHON</span> <span class="pull-right">85%</span>
+									<span>MONGO DB</span> <span class="pull-right">85%</span>
 									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
 											aria-valuemax="100"></div>
 									</div>
 									
-									<span>Data Visualization</span> <span class="pull-right">90%</span>
+									<span>EXPRESS JS</span> <span class="pull-right">85%</span>
 									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
 											aria-valuemax="100"></div>
+									</div>
+
+									
+									<span>REACT</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
+										aria-valuemax="100"></div>
 									</div>
 									
-									<span>Statistical Analysis</span> <span class="pull-right">85%</span>
+									<span>NODE JS</span> <span class="pull-right">85%</span>
 									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
 											aria-valuemax="100"></div>
 									</div>
-									
-									<span>Machine Learning</span> <span class="pull-right">80%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
+							
 								</div>
 							</div>
 						</div>
@@ -270,17 +299,16 @@
 								<h1 class="big">About</h1>
 								<h2 class="mb-4">About Me</h2>
 								
-								<p>With over 5 years of comprehensive experience in the field of data science & analytics, accompanied by a bachelor's degree in engineering. 
-									Proficient in data analysis, statistical analysis, hypothesis testing, customer behaviour analysis, &amp; machine learning. 
-									Demonstrated success in leading impactful projects and providing effective mentorship.</p>
+								<p>I specialize in web development, data science, and machine learning, with a strong foundation in computer science and engineering. Proficient in creating responsive web applications using HTML, CSS, JavaScript, React, Spring Boot, MySQL, MongoDB, Express, and Node.js, and building secure backends and APIs.
+
+									Key projects include a travel and tourism website, a food ordering application, and a house price prediction model. Experienced in frameworks like Spring Security, Express, and tools such as Docker and Git, I excel in delivering innovative, scalable solutions while collaborating effectively in teams.</p>
 								<ul class="about-info mt-4 px-md-0 px-2">
-									<li class="d-flex"><span>Profile:</span> <span>Data Science &amp; Analytics</span></li>
-									<li class="d-flex"><span>Domain:</span> <span>Retail, Ecommerce, BFSI &amp; Digital Marketing</span></li>
-									<li class="d-flex"><span>Education:</span> <span>Bachelor of Engineering</span></li>
+									<li class="d-flex"><span>Profile:</span> <span>Full Stack Web Developer</span></li>
+									
+									<li class="d-flex"><span>Education:</span> <span>Bachelor of Technology</span></li>
 									<li class="d-flex"><span>Language:</span> <span>English, Hindi</span></li>
-									<li class="d-flex"><span>BI Tools:</span> <span>Microsoft Power BI, Looker &amp; Tableau</span></li>
-									<li class="d-flex"><span>Other Skills:</span> <span>Cloud, PySpark, Excel, Git, JIRA, Google Analytics &amp; SEO</span></li>
-									<li class="d-flex"><span>Interest:</span> <span>Traveling, Travel Photography, Teaching</span></li>
+									<li class="d-flex"><span>Other Skills:</span> <span>Java, Spring Boot, Spring Security, Cloud Computing</span></li>
+									<li class="d-flex"><span>Interest:</span> <span>Traveling, Travel Photography</span></li>
 									
 								</ul>
 							</div>
@@ -290,10 +318,10 @@
 						<div class="counter-wrap ftco-animate d-flex mt-md-3">
 							<div class="text">
 								<p class="mb-4">
-									<span class="number" data-number="30">0</span> <span>+</span>
+									<span class="number" data-number="5">0</span> <span>+</span>
 									<span>&nbsp; Projects completed</span>
 								</p>
-								<p><a href="https://www.linkedin.com/in/rishabhnmishra/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+								<p><a href="https://www.linkedin.com/in/anurag-prajapati-026918268/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
 							</div>
 						</div>
 					</div>
@@ -311,7 +339,7 @@
           <div class="col-md-10 heading-section text-center ftco-animate">
           	<h1 class="big big-2">Resume</h1>
             <h2 class="mb-4">Resume</h2>
-            <p>Seasoned Senior Data Analyst with 5+ years of experience driving business strategies through data-driven insights. Proven expertise in data science, statistical analysis, machine learning algorithms and project management.</p>
+            <p>3rd-year Computer Science Engineering student at IIIT DM Kurnool, passionate about becoming a Full-Stack Developer. Proficient in React, Node.js, Spring Boot, MongoDB, MySQL, and experienced in building dynamic web applications and machine learning projects.</p>
           </div>
         </div>
 
@@ -324,32 +352,20 @@
 		<div class="row">
 				<div class="col-md-6">
 					<div class="resume-wrap ftco-animate">
-						<span class="date">2021-Present</span>
-						<h2>Senior Data Analyst</h2>
-						<span class="position">Merkle</span>
-						<p class="mt-4">Merkle, a leading CXM and media company with over 10K+ professionals globally. It's a part of Dentsu International. 
-							<ul>
-								<li>Analysed ad campaigns, clickstream, and customer surveys data, identified an increasing demand and launched a strategic product line.</li>
-								<li>Developed time series forecasting models to predict sales and optimize marketing budgets, got model performance of 92%.</li>
-								<li>Designed and executed A/B tests, performed rigorous statistical analysis. Led to 20% MoM increase in the conversion rate.</li>
-							</ul>
-						</p>
+						<span class="date">AUG 2024-SEP 2024</span>
+						<h2>Machine learning Intern</h2>
+						<span class="position">Atharvo Pvt Limited</span>
+						<p class="mt-4">Atharvo Pvt. Limited is a leading company specializing in machine learning solutions, focusing on data-driven insights and predictive models for various industries. <ul> <li>Analyzed real-world datasets and applied machine learning algorithms to identify trends, optimize processes, and provide actionable insights.</li> <li>Developed predictive models to forecast housing prices with an accuracy rate of 90%, enhancing data-driven decision-making.</li> <li>Collaborated with cross-functional teams to implement machine learning pipelines and optimize existing models, improving model performance and scalability.</li> </ul> </p>
 					</div>
 
 				</div>
 
 				<div class="col-md-6">
 					<div class="resume-wrap ftco-animate">
-						<span class="date">2018-2021</span>
-						<h2>Senior Data Analyst</h2>
-						<span class="position">iQuanti</span>
-						<p class="mt-4">iQuanti is a data-driven digital marketing analytics and solutions company, helps top 100 global brands. 
-							<ul>
-								<li>Performed in-depth market research and analysis to create online pages. Resulted in ~100% website growth and 30% increase in conversion rate YoY.</li>
-								<li>Delivered multiple training and mentorship sessions on analytical tools like SQL, MS Excel, Power BI, Tableau and Python.</li>
-								<li>Performed migration and enhancements for merchandising dashboard, involved data integration and its feature improvement.</li>
-							</ul>
-						</p>
+						<span class="date">Jan 2024- Feb 2024</span>
+						<h2>Web Designer Intern</h2>
+						<span class="position">Oasis Infobyte</span>
+						<p class="mt-4">Oasis Infobyte is a web design and development company, specializing in creating dynamic and interactive websites for clients across various industries. <ul> <li>Designed and developed responsive web pages, resulting in enhanced user experience and improved site performance.</li> <li>Collaborated with cross-functional teams to create intuitive and visually appealing layouts using **HTML, CSS, JavaScript**, and **React**.</li> <li>Participated in the development of personal portfolios, landing pages, and calculators, ensuring a seamless user interface and optimized performance across devices.</li> </ul> </p>
 					</div>
 
 				</div>
@@ -367,18 +383,18 @@
 			<div class="row">
     			<div class="col-md-6">
     				<div class="resume-wrap ftco-animate">
-    					<span class="date">2014-2018</span>
-    					<h2>Bachelor of Engineering</h2>
-    					<span class="position">Visvesvaraya Technological University</span>
+    					<span class="date">2022-2026</span>
+    					<h2>Bachelor of Technology</h2>
+    					<span class="position">Indian Institute of Information Technology Design and Manufacturing KURNOOL</span>
     					<p class="mt-4">Grade: First class distinction.</p>
     				</div>
     			</div>
 
     			<div class="col-md-6">
     				<div class="resume-wrap ftco-animate">
-    					<span class="date">2012-2013</span>
+    					<span class="date">2021-2022</span>
     					<h2>Higher Secondary School</h2>
-    					<span class="position">Army Public School</span>
+    					<span class="position">BBS International School</span>
     					<p class="mt-4">Grade: First class distinction.</p>
     				</div>
 				</div>
@@ -400,124 +416,133 @@
           <div class="col-md-7 heading-section text-center ftco-animate">
             <h1 class="big big-2">Projects</h1>
             <h2 class="mb-4">Projects</h2>
-            <p>Below are the sample Data Analytics projects on SQL, Python, Power BI & ML.</p>
+            <p>Below are the sample Web Development Projects.</p>
           </div>
         </div>
         <div class="row d-flex">
           <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry justify-content-end">
-              <a href="https://github.com/rishabhnmishra/SQL_Music_Store_Analysis/blob/main/Music_Store_Query.sql" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');">
+              <a href="https://airbnb-clone-7msn.onrender.com/listings" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');">
               </a>
               <div class="text mt-3 float-right d-block">
 
-                <h3 class="heading"><a href="https://github.com/rishabhnmishra/SQL_Music_Store_Analysis/blob/main/Music_Store_Query.sql">Digital Music Store Data Analysis using SQL</a></h3>
-                <p>Analyzed music store data using advanced SQL queires to identify gaps and increase the business growth.</p>
+                <h3 class="heading"><a href="https://github.com/Anurag915/Airbnb-Clone">Airbnb Clone: A Seamless Platform for Booking and Hosting Stays</a></h3>
+                <p>Developed an Airbnb clone using advanced SQL queries to analyze user data, identify booking patterns, and optimize listings to enhance user engagement and drive business growth.</p>
               </div>
             </div>
           </div>
+
+
           <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry justify-content-end">
-              <a href="https://github.com/rishabhnmishra/Python_Diwali_Sales_Analysis/blob/main/Diwali_Sales_Analysis.ipynb" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');">
+              <a href="https://anurag915.github.io/page-landing/#home" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');">
               </a>
               <div class="text mt-3 float-right d-block">
 
-                <h3 class="heading"><a href="https://github.com/rishabhnmishra/Python_Diwali_Sales_Analysis/blob/main/Diwali_Sales_Analysis.ipynb">Data Analysis using Python Project for Beginners</a></h3>
-                <p>Performed exploratory data analysis on diwali sales data using Python to improve the customer experience.</p>
+                <h3 class="heading"><a href="https://github.com/Anurag915/page-landing">Mechanic Car Shop Landing Page for Service Bookings.</a></h3>
+                <p>Developed a landing page for a mechanic car shop, where the owner offers a variety of car services, enhancing customer engagement and streamlining service bookings.</p>
               </div>
             </div>
           </div>
           <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry">
-              <a href="https://github.com/rishabhnmishra/Madhav_Store_Analysis_PowerBI/blob/main/Madhav%20Store%20dashboard.jpg" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg');">
+              <a href="https://anurag915.github.io/Temperature-Converter/" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpeg');">
               </a>
               <div class="text mt-3 float-right d-block">
 
-                <h3 class="heading"><a href="https://github.com/rishabhnmishra/Madhav_Store_Analysis_PowerBI/blob/main/Madhav%20Store%20dashboard.jpg">Power BI Sales dashboard Project for Beginners</a></h3>
-                <p>Designed a power bi dashboard for Madhav Store to track and analyze the online sales data acorss India.</p>
+                <h3 class="heading"><a href="https://github.com/Anurag915/Temperature-Converter">Universal Temperature Converter</a></h3>
+                <p>Developed a Universal Temperature Converter website for converting between multiple units like Celsius, Fahrenheit, Kelvin. The user-friendly, responsive design ensures quick and accurate conversions on both desktop and mobile.</p>
               </div>
             </div>
           </div>
         </div>
 	<br>
 		<!-- added justify-content-center to center align the last two projects -->
-		<div class="row d-flex justify-content-center">  
+		<div class="row d-flex justify-content-center"> 
+			
 			<div class="col-md-4 d-flex ftco-animate">
 				<div class="blog-entry justify-content-end">
-				<a href="https://github.com/rishabhnmishra/sales_forecasting/tree/main" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');">
+				<a href="https://github.com/Anurag915/Bank-Database-Project-Java" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');">
 				</a>
 				<div class="text mt-3 float-right d-block">
   
-				  <h3 class="heading"><a href="https://github.com/rishabhnmishra/sales_forecasting/tree/main">Sales Forecast- Time Series Forecasting</a></h3>
-				  <p>Used multiple machine learning models to forecast sales (retail store) and performed time series analysis.</p>
+				  <h3 class="heading"><a href="https://github.com/Anurag915/Bank-Database-Project-Java">Bank Database Management System with Java & Spring Boot</a></h3>
+				  <p>Developed a Bank Database Management System using Java and Spring Boot to efficiently manage customer accounts and transactions. Focused on security, scalability, and seamless data handling for banking operations.</p>
 				</div>
 			  </div>
 			</div>
+
+
+
 			<div class="col-md-4 d-flex ftco-animate">
 				<div class="blog-entry justify-content-end">
-				<a href="https://github.com/rishabhnmishra/customer_segmentation/blob/main/Customer_Segmentation-final.ipynb" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');">
+				<a href="https://github.com/Anurag915/QUIZ-APP" class="block-20 zoom-effect" style="background-image: url('images/proj_5.png');">
 				</a>
 				<div class="text mt-3 float-right d-block">
   
-				  <h3 class="heading"><a href="https://github.com/rishabhnmishra/customer_segmentation/blob/main/Customer_Segmentation-final.ipynb">Customer Segmentation using clustering model</a></h3>
-				  <p>Developed a ML model to give various recommendations of financial products &amp; services on target customer groups.</p>
+				  <h3 class="heading"><a href="https://github.com/Anurag915/QUIZ-APP">Quiz Creator Application with Java & Spring Boot</a></h3>
+				  <p>Developed a Quiz Creator Application using Java and Spring Boot to enable users to create, manage, and take quizzes. Focused on building a scalable backend and an intuitive interface for seamless quiz creation and participation.
+
+				  </p>
 				</div>
 			  </div>
 			</div>
+			
 		 </div>
 	  </div>
     </section>
 
 	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
-      <div class="container">
-		<div class="row d-md-flex align-items-center">
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="20">0</strong>
-                <span>Achievements</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="30">0</strong>
-                <span>Projects</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="1000">0</strong>
-                <span>Mentored Students</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="500">0</strong>
-                <span>Cups of coffee</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-	
-	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
-			<!-- <div class="container"> -->
-				<div class="row justify-content-center">
-					<div class="col-md-7 ftco-animate text-center">
-						<h2>More projects on<span> Github  </span> </h2>
-						<div class="heading"> <h4> I love to solve business problems &amp; uncover hidden data stories </h4>
-						<br>
-						<p><a href="https://github.com/rishabhnmishra" class="btn btn-primary py-3 px-5">GitHub</a></p>
-						</div>
-					</div>
+		<div class="container">
+			<div class="row d-md-flex align-items-center">
+			  <!-- Achievements Section -->
+			  <div class="col-md d-flex justify-content-center counter-wrap ftco-animate" 
+				   style="position: relative; z-index: 1;">
+				<div class="block-18">
+				  <div class="text">
+					<strong class="number" data-number="10">0</strong>
+					<span>Achievements</span>
+				  </div>
 				</div>
-			<!-- </div> -->
+			  </div>
+		  
+			  <!-- Projects Section -->
+			  <div class="col-md d-flex justify-content-center counter-wrap ftco-animate" 
+				   style="position: relative; z-index: 1;">
+				<div class="block-18">
+				  <div class="text">
+					<strong class="number" data-number="5">0</strong>
+					<span>Projects</span>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  
+	
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url('images/bg_1.jpg');">
+		<div class="row justify-content-center">
+			<div class="col-md-7 ftco-animate text-center">
+				<h2>More projects on <span>GitHub</span></h2>
+				<div class="heading">
+					<h4>I love to solve real-world problems.</h4>
+					<br>
+					<p>
+						<a href="https://github.com/Anurag915" 
+						class="btn btn-primary py-3 px-5 github-button" 
+						target="_blank" 
+						rel="noopener noreferrer"
+						style="z-index: 1000; position: relative; pointer-events: auto;">
+						GitHub
+						</a>
+
+					</p>
+				</div>
+			</div>
 		</div>
+		</div>
+	
+	
 	</section>
 
 
@@ -539,7 +564,7 @@
           			<span class="icon-map-signs"></span>
           		</div>
           		<h3 class="mb-4">Address</h3>
-	            <p>Bengaluru, India</p>
+	            <p>Kurnool, India</p>
 	          </div>
           </div>
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
@@ -557,7 +582,7 @@
           			<span class="icon-paper-plane"></span>
           		</div>
           		<h3 class="mb-4">Email Address</h3>
-	            <p><a href="mailto:info@yoursite.com">conctact@domainname.com</a></p>
+	            <p><a href="mailto:info@yoursite.com">anuragprajapati02005@gmail.com</a></p>
 	          </div>
           </div>
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
@@ -566,7 +591,7 @@
           			<span class="icon-globe"></span>
           		</div>
           		<h3 class="mb-4">Download Resume</h3>
-	            <p><a href="#">resumelink</a></p>
+	            <p><a href="https://drive.google.com/file/d/15kDm0pZb_sPQ0G9NuB8hWA6963zxdwfr/view?usp=sharing">resumelink</a></p>
 	          </div>
           </div>
 
@@ -575,17 +600,14 @@
 			<br>
 			<div class="row justify-content-center">
 				<div class="col-md-7 ftco-animate text-center">
-					<h2>Have a<span> Question?  </span> <a href="https://forms.gle/uLaTShUKXraAvHJ77" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+					<h2>Have a<span> Question?  </span> <a href="https://forms.gle/Y5QENnfSMqxbNxfK6" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
 				</div>
 			</div>
 				<br>
 					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
 					  <li class="ftco-animate normal-txt">Find me on  </li>
-					  <li class="ftco-animate"><a href="https://www.youtube.com/@RishabhMishraOfficial"><span class="icon-youtube"></span></a></li>
-					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/rishabhnmishra/"><span class="icon-linkedin"></span></a></li>  
-					  <li class="ftco-animate"><a href="https://twitter.com/rishabhnmishra"><span class="icon-twitter"></span></a></li>
-					  <li class="ftco-animate"><a href="https://twitter.com/rishabhnmishra"><span class="icon-facebook"></span></a></li>
-				      <li class="ftco-animate"><a href="https://www.instagram.com/rishabhnmishra/"><span class="icon-instagram"></span></a></li>
+					 
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/anurag-prajapati-026918268/"><span class="icon-linkedin"></span></a></li>  
 					</ul>
 				<br>
 		   </div>
